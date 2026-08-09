@@ -1,0 +1,36 @@
+<!-- Form Section -->
+<section id="galmee-form" class="form-section">
+    <h2>Formii Galmee Barattootaa</h2>
+    
+    <!-- Action irratti faayila PHP daataa kuusu sana ergaa -->
+    <form action="register.php" method="POST" class="register-form">
+        
+        <div class="input-group">
+            <label for="student_id">Lakk. Barataa (ID):</label>
+            <input type="text" id="student_id" name="student_id" placeholder="Fkn: ST-1001" required>
+        </div>
+
+        <div class="input-group">
+            <label for="fullname">Maqaa Guutuu:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Maqaa kee barreessi" required>
+        </div>
+
+        <div class="input-group">
+            <label for="grade">Kutaa:</label>
+            <select id="grade" name="grade" required>
+                <option value="">-- Kutaa Filadhu --</option>
+                <option value="9">Kutaa 9</option>
+                <option value="10">Kutaa 10</option>
+                <option value="11">Kutaa 11</option>
+                <option value="12">Kutaa 12</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="section">Kutaa Xiqqaa (Section):</label>
+            <input type="text" id="section" name="section" placeholder="Fkn: A, B, C">
+        </div>
+
+        <button type="submit" name="save" class="btn-submit">Galmeessi</button>
+    </form>
+</section>
